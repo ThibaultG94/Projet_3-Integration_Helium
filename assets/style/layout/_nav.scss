@@ -18,21 +18,20 @@ nav {
 
     ul {
         display: flex;
-        margin: 0 15px 0 53px;
+        margin: 0 25px 0 53px;
         position: relative;
 
         li {
-            margin-right: 40px;
+            margin-right: 27px;
 
             a {
                 font-weight: 500;
                 line-height: 16px;
-            }
+                position: relative;
 
-            &:after {
-                content: "";
-
-
+                img {
+                    vertical-align: 4%;
+                }
             }
         }
 
@@ -51,7 +50,7 @@ nav {
             height: 20px;
             background: $grey6;
             position: absolute;
-            right: 10px;
+            right: 0px;
         }
     }
 
@@ -62,4 +61,15 @@ nav {
         position: absolute;
         right: 25px;
     }
+
+    .build-clicked {
+        position: absolute;
+        bottom: -100px;
+        left: 750px;
+        background: $white;
+        width: 150px;
+        height: 100px;
+        visibility: visible;
+    }
+
 }

@@ -40,18 +40,19 @@ nav p {
 }
 nav ul {
   display: flex;
-  margin: 0 15px 0 53px;
+  margin: 0 25px 0 53px;
   position: relative;
 }
 nav ul li {
-  margin-right: 40px;
+  margin-right: 27px;
 }
 nav ul li a {
   font-weight: 500;
   line-height: 16px;
+  position: relative;
 }
-nav ul li:after {
-  content: "";
+nav ul li a img {
+  vertical-align: 4%;
 }
 nav ul:before {
   content: "";
@@ -67,7 +68,7 @@ nav ul:after {
   height: 20px;
   background: #5D5D5D;
   position: absolute;
-  right: 10px;
+  right: 0px;
 }
 nav .globe {
   color: #FFFFFF;
@@ -75,4 +76,13 @@ nav .globe {
   height: 22px;
   position: absolute;
   right: 25px;
+}
+nav .build-clicked {
+  position: absolute;
+  bottom: -100px;
+  left: 750px;
+  background: #FFFFFF;
+  width: 150px;
+  height: 100px;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */

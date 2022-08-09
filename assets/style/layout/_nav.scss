@@ -108,4 +108,50 @@ nav {
         opacity: 0;
         transform: translateY(10px);
     }
+
+    .use-nav {
+        visibility: hidden;
+        position: absolute;
+        bottom: -305px;
+        left: 840px;
+        background: $white;
+        width: 315px;
+        padding: 27px 22px 0;
+        border-radius: 5px;
+        opacity: 0;
+        transition: 0.2s ease;
+        transform: translateY(-10px);
+        z-index: 1;
+
+        .use-nav-content {
+            margin-bottom: 30px;
+
+            h3 {
+                color: $black2;
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 6px;
+                line-height: 16px;
+            }
+
+            p {
+                color: #7f7f7f;
+                font-size: 0.9rem;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .use-clicked {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .use-declicked {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(10px);
+    }
 }

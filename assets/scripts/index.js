@@ -1,25 +1,61 @@
 const buildArrow = document.querySelector(".build");
-const buildContainer = document.querySelector(".build-nav");
+const buildMenu = document.querySelector(".build-nav");
 const clickBody = document.querySelector("body");
 const useArrow = document.querySelector(".use");
-const useContainer = document.querySelector(".use-nav");
+const useMenu = document.querySelector(".use-nav");
+const resourcesArrow = document.querySelector(".resources");
+const resourcesMenu = document.querySelector(".resources-nav");
+const globeClick = document.querySelector(".globe");
+const globeMenu = document.querySelector(".globe-nav");
 
 buildArrow.addEventListener("click", () => {
-  buildContainer.classList.toggle("build-clicked");
+  useMenu.classList.remove("clicked");
+  resourcesMenu.classList.remove("clicked");
+  globeMenu.classList.remove("clicked");
+  buildMenu.classList.toggle("clicked");
 });
 
 clickBody.addEventListener("click", (e) => {
   if (e.target.contains(buildArrow)) {
-    buildContainer.classList.remove("build-clicked");
+    buildMenu.classList.remove("clicked");
   }
 });
 
 useArrow.addEventListener("click", () => {
-  useContainer.classList.toggle("use-clicked");
+  buildMenu.classList.remove("clicked");
+  resourcesMenu.classList.remove("clicked");
+  globeMenu.classList.remove("clicked");
+  useMenu.classList.toggle("clicked");
 });
 
 clickBody.addEventListener("click", (e) => {
   if (e.target.contains(useArrow)) {
-    useContainer.classList.remove("use-clicked");
+    useMenu.classList.remove("clicked");
+  }
+});
+
+resourcesArrow.addEventListener("click", () => {
+  buildMenu.classList.remove("clicked");
+  useMenu.classList.remove("clicked");
+  globeMenu.classList.remove("clicked");
+  resourcesMenu.classList.toggle("clicked");
+});
+
+clickBody.addEventListener("click", (e) => {
+  if (e.target.contains(resourcesArrow)) {
+    resourcesMenu.classList.remove("clicked");
+  }
+});
+
+globeClick.addEventListener("click", () => {
+  buildMenu.classList.remove("clicked");
+  useMenu.classList.remove("clicked");
+  resourcesMenu.classList.remove("clicked");
+  globeMenu.classList.toggle("clicked");
+});
+
+clickBody.addEventListener("click", (e) => {
+  if (e.target.contains(globeClick)) {
+    globeMenu.classList.remove("clicked");
   }
 });

@@ -74,27 +74,38 @@ nav ul:after {
   right: 0px;
 }
 nav .globe {
+  height: 22px;
+}
+nav .globe img {
   filter: invert(100%);
   height: 22px;
   position: absolute;
   right: 25px;
+  cursor: pointer;
+}
+nav .globe img:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(192deg) brightness(134%) contrast(97%);
 }
 nav .build-nav {
   visibility: hidden;
   position: absolute;
   bottom: -305px;
-  left: 760px;
+  left: 730px;
   background: #FFFFFF;
   width: 315px;
-  padding: 27px 22px 0;
+  padding: 20px 0 0;
   border-radius: 5px;
   opacity: 0;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
   transform: translateY(-10px);
   z-index: 1;
 }
 nav .build-nav .build-nav-content {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  height: 55px;
+  padding-top: 8px;
+  transition: 0.4s ease;
+  cursor: pointer;
 }
 nav .build-nav .build-nav-content h3 {
   color: #1D1D1D;
@@ -102,31 +113,26 @@ nav .build-nav .build-nav-content h3 {
   font-weight: 500;
   margin-bottom: 6px;
   line-height: 16px;
+  margin-left: 22px;
 }
 nav .build-nav .build-nav-content p {
   color: #7f7f7f;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 16px;
+  margin-left: 22px;
 }
-nav .build-clicked {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-nav .build-declicked {
-  visibility: visible;
-  opacity: 0;
-  transform: translateY(10px);
+nav .build-nav .build-nav-content:hover {
+  background: #ebebeb;
 }
 nav .use-nav {
   visibility: hidden;
   position: absolute;
   bottom: -305px;
-  left: 840px;
+  left: 810px;
   background: #FFFFFF;
   width: 315px;
-  padding: 27px 22px 0;
+  padding: 20px 0 0;
   border-radius: 5px;
   opacity: 0;
   transition: 0.2s ease;
@@ -134,7 +140,11 @@ nav .use-nav {
   z-index: 1;
 }
 nav .use-nav .use-nav-content {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  height: 55px;
+  padding-top: 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 nav .use-nav .use-nav-content h3 {
   color: #1D1D1D;
@@ -142,20 +152,85 @@ nav .use-nav .use-nav-content h3 {
   font-weight: 500;
   margin-bottom: 6px;
   line-height: 16px;
+  margin-left: 22px;
 }
 nav .use-nav .use-nav-content p {
   color: #7f7f7f;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 16px;
+  margin-left: 22px;
 }
-nav .use-clicked {
+nav .use-nav .use-nav-content:hover {
+  background: #ebebeb;
+}
+nav .resources-nav {
+  visibility: hidden;
+  position: absolute;
+  bottom: -237px;
+  left: 880px;
+  background: #FFFFFF;
+  width: 287px;
+  padding: 20px 0 0;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s ease;
+  transform: translateY(-10px);
+  z-index: 1;
+}
+nav .resources-nav .resources-nav-content {
+  margin-bottom: 15px;
+  height: 55px;
+  padding-top: 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+nav .resources-nav .resources-nav-content h3 {
+  color: #1D1D1D;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  line-height: 16px;
+  margin-left: 22px;
+}
+nav .resources-nav .resources-nav-content p {
+  color: #7f7f7f;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 22px;
+}
+nav .resources-nav .resources-nav-content:hover {
+  background: #ebebeb;
+}
+nav .globe-nav {
+  visibility: hidden;
+  position: absolute;
+  bottom: -325px;
+  right: 20px;
+  background: #FFFFFF;
+  width: 140px;
+  padding: 27px 0 15px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.2s ease;
+  z-index: 1;
+  text-align: center;
+}
+nav .globe-nav p {
+  margin-bottom: 12px;
+}
+nav .globe-nav p a {
+  color: #111111;
+  font-weight: 600;
+  color: #38a2ff;
+  letter-spacing: -0.5px;
+}
+nav .globe-nav p a:hover {
+  color: #be73ff;
+}
+nav .clicked {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
-}
-nav .use-declicked {
-  visibility: visible;
-  opacity: 0;
-  transform: translateY(10px);
 }/*# sourceMappingURL=style.css.map */

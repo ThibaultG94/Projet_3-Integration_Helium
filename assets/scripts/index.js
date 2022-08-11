@@ -1,12 +1,13 @@
 const buildArrow = document.querySelector(".build");
 const buildMenu = document.querySelector(".build-nav");
-const clickBody = document.querySelector("body");
+const clickBody = document.querySelector(".click-body");
 const useArrow = document.querySelector(".use");
 const useMenu = document.querySelector(".use-nav");
 const resourcesArrow = document.querySelector(".resources");
 const resourcesMenu = document.querySelector(".resources-nav");
 const globeClick = document.querySelector(".globe");
 const globeMenu = document.querySelector(".globe-nav");
+const clickNav = document.querySelector("nav");
 
 buildArrow.addEventListener("click", () => {
   useMenu.classList.remove("clicked");
@@ -16,6 +17,10 @@ buildArrow.addEventListener("click", () => {
 });
 
 clickBody.addEventListener("click", (e) => {
+  buildMenu.classList.remove("clicked");
+});
+
+clickNav.addEventListener("click", (e) => {
   if (e.target.contains(buildArrow)) {
     buildMenu.classList.remove("clicked");
   }
@@ -29,6 +34,10 @@ useArrow.addEventListener("click", () => {
 });
 
 clickBody.addEventListener("click", (e) => {
+  useMenu.classList.remove("clicked");
+});
+
+clickNav.addEventListener("click", (e) => {
   if (e.target.contains(useArrow)) {
     useMenu.classList.remove("clicked");
   }
@@ -42,6 +51,10 @@ resourcesArrow.addEventListener("click", () => {
 });
 
 clickBody.addEventListener("click", (e) => {
+  resourcesMenu.classList.remove("clicked");
+});
+
+clickNav.addEventListener("click", (e) => {
   if (e.target.contains(resourcesArrow)) {
     resourcesMenu.classList.remove("clicked");
   }
@@ -55,6 +68,10 @@ globeClick.addEventListener("click", () => {
 });
 
 clickBody.addEventListener("click", (e) => {
+  globeMenu.classList.remove("clicked");
+});
+
+clickNav.addEventListener("click", (e) => {
   if (e.target.contains(globeClick)) {
     globeMenu.classList.remove("clicked");
   }

@@ -21,6 +21,10 @@ body {
   height: 100vh;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 nav {
   background: rgba(26, 26, 26, 0.75);
   display: flex;
@@ -29,7 +33,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 15px 0;
+  padding: 10px 0;
   z-index: 100;
 }
 nav .logosymbol {
@@ -74,11 +78,11 @@ nav ul:after {
   right: 0px;
 }
 nav .globe {
-  height: 22px;
+  height: 28px;
 }
 nav .globe img {
   filter: invert(100%);
-  height: 22px;
+  height: 28px;
   position: absolute;
   right: 25px;
   cursor: pointer;
@@ -233,4 +237,60 @@ nav .clicked {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+header .header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-left .header-left-content {
+  max-width: 490px;
+  margin: 0 auto;
+}
+header .header-left .header-left-content .hotspots {
+  background: linear-gradient(90.06deg, #8816e3 10.06%, #d5149f 92.17%);
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+header .header-left .header-left-content .hotspots img {
+  height: 12px;
+  opacity: 0.4;
+}
+header .header-left .header-left-content .hotspots:hover {
+  background: 0.8;
+}
+header .header-left .header-left-content .hotspots:hover img {
+  opacity: 1;
+}
+header .header-left .header-left-content h1 {
+  font-size: 6.8rem;
+  line-height: 99px;
+  margin-bottom: 20px;
+}
+header .header-left .header-left-content h3 {
+  color: #474DFF;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+header .header-left .header-left-content p {
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+header .header-right {
+  background: url("../img/base.png");
 }/*# sourceMappingURL=style.css.map */

@@ -56,3 +56,7 @@ body {
     background: $black3;
     height: 100vh;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

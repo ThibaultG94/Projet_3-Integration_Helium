@@ -123,8 +123,7 @@
                 transition: 0.2s;
                 cursor: pointer;
                 background-color: $color3;
-                display: block;
-                max-width: 260px;
+                display: inline-block;
 
                 &:hover {
                     opacity: 0.8;

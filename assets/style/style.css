@@ -19,14 +19,11 @@ body {
   max-width: 100vw;
   background: #1B1B1B;
   height: 100vh;
+  text-align: left;
 }
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-button {
-  background: none;
 }
 
 nav {
@@ -312,7 +309,7 @@ header .header-left .header-left-content h1 {
   font-size: 6.7rem;
   line-height: 99px;
   margin-bottom: 20px;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
 }
 header .header-left .header-left-content h3 {
   color: #474DFF;
@@ -498,8 +495,7 @@ header .header-right .marker {
   transition: 0.2s;
   cursor: pointer;
   background-color: #474DFF;
-  display: block;
-  max-width: 260px;
+  display: inline-block;
 }
 .news .news-container .news-network .network-btn:hover {
   opacity: 0.8;
@@ -523,4 +519,70 @@ header .header-right .marker {
   letter-spacing: 0;
   margin-bottom: 10px;
   line-height: 1.2;
+}
+
+.section-mine {
+  background: #1D1D1D;
+  position: relative;
+}
+.section-mine .mine-bandereau {
+  background: url("../img/minebg2.jpg") center/cover;
+  width: 101%;
+  height: 600px;
+  position: relative;
+}
+.section-mine .mine-bandereau img {
+  position: absolute;
+  bottom: -1px;
+  width: 102%;
+  height: 250px;
+  min-width: 880px;
+}
+.section-mine .mine-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section-mine .mine-content .mine-content-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section-mine .mine-content .mine-content-left h2 {
+  font-size: 10rem;
+  letter-spacing: -10px;
+  margin-bottom: 10px;
+}
+.section-mine .mine-content .mine-content-left h3 {
+  font-size: 2.8rem;
+  color: #888888;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+.section-mine .mine-content .mine-content-left p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+.section-mine .mine-content .mine-content-left .network-btn {
+  color: #FFFFFF;
+  padding: 18px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: #474DFF;
+  display: inline-block;
+  margin-top: 20px;
+}
+.section-mine .mine-content .mine-content-left .network-btn:hover {
+  opacity: 0.8;
+  transform: translateY(2px);
+}
+.section-mine .mine-content img {
+  max-width: 36%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 500px;
 }/*# sourceMappingURL=style.css.map */

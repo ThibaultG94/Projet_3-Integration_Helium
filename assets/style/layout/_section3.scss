@@ -1,0 +1,73 @@
+.section-use {
+    position: relative;
+    text-align: center;
+}
+
+.use-content {
+    padding-top: 520px;
+    z-index: 0;
+    background: white;
+
+    img {
+        width: 100%;
+        position: absolute;
+        top: -3px;
+        left: 0;
+        z-index: 0;
+    }
+
+    h2 {
+        color: $blackf;
+        font-size: 10rem;
+        letter-spacing: -10px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+        z-index: 1;
+    }
+
+    h3 {
+        color: #888888;
+        font-size: 2.8rem;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+
+    p {
+        color: $blackf;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        opacity: 0.8;
+        margin: 0 auto 20px;
+        max-width: 720px;
+    }
+
+    .div-btn {
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+
+        .network-btn {
+            color: $white;
+            padding: 18px 26px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: 0.2s;
+            cursor: pointer;
+            background-color: $color3;
+            display: inline-block;
+            margin-top: 20px;
+            z-index: 100;
+
+            &:hover {
+                opacity: 0.8;
+                transform: translateY(2px);
+            }
+        }
+    }
+
+}

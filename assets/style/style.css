@@ -524,6 +524,8 @@ header .header-right .marker {
 .section-mine {
   background: #1D1D1D;
   position: relative;
+  padding-bottom: 60px;
+  z-index: 2;
 }
 .section-mine .mine-bandereau {
   background: url("../img/minebg2.jpg") center/cover;
@@ -550,6 +552,7 @@ header .header-right .marker {
   font-size: 10rem;
   letter-spacing: -10px;
   margin-bottom: 10px;
+  line-height: 1.1;
 }
 .section-mine .mine-content .mine-content-left h3 {
   font-size: 2.8rem;
@@ -557,12 +560,14 @@ header .header-right .marker {
   line-height: 1.1;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  max-width: 500px;
 }
 .section-mine .mine-content .mine-content-left p {
   margin-bottom: 20px;
   font-size: 1.2rem;
   line-height: 1.4;
   opacity: 0.8;
+  max-width: 540px;
 }
 .section-mine .mine-content .mine-content-left .network-btn {
   color: #FFFFFF;
@@ -585,4 +590,95 @@ header .header-right .marker {
   box-sizing: border-box;
   position: absolute;
   top: 500px;
+}
+.section-mine .mine-content .mine-content-bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 130px 0 100px;
+}
+.section-mine .mine-content .mine-content-section {
+  background: #353535;
+  padding: 26px 40px;
+  max-width: 355px;
+  border-radius: 10px;
+}
+.section-mine .mine-content .mine-content-section h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.section-mine .mine-content .mine-content-section p {
+  font-size: 1rem;
+  margin: 0 auto;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.section-use {
+  position: relative;
+  text-align: center;
+}
+
+.use-content {
+  padding-top: 520px;
+  z-index: 0;
+  background: white;
+}
+.use-content img {
+  width: 100%;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 0;
+}
+.use-content h2 {
+  color: #111111;
+  font-size: 10rem;
+  letter-spacing: -10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  z-index: 1;
+}
+.use-content h3 {
+  color: #888888;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+.use-content p {
+  color: #111111;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  opacity: 0.8;
+  margin: 0 auto 20px;
+  max-width: 720px;
+}
+.use-content .div-btn {
+  display: flex;
+  z-index: 1;
+  justify-content: space-around;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.use-content .div-btn .network-btn {
+  color: #FFFFFF;
+  padding: 18px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: #474DFF;
+  display: inline-block;
+  margin-top: 20px;
+  z-index: 100;
+}
+.use-content .div-btn .network-btn:hover {
+  opacity: 0.8;
+  transform: translateY(2px);
 }/*# sourceMappingURL=style.css.map */

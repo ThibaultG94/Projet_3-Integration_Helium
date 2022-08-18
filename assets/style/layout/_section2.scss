@@ -1,6 +1,8 @@
 .section-mine {
     background: $black2;
     position: relative;
+    padding-bottom: 60px;
+    z-index: 2;
 
     .mine-bandereau {
         background: url("../img/minebg2.jpg") center/cover;
@@ -31,6 +33,7 @@
                 font-size: 10rem;
                 letter-spacing: -10px;
                 margin-bottom: 10px;
+                line-height: 1.1;
             }
 
             h3 {
@@ -39,6 +42,7 @@
                 line-height: 1.1;
                 letter-spacing: -2px;
                 margin-bottom: 30px;
+                max-width: 500px;
             }
 
             p {
@@ -46,6 +50,7 @@
                 font-size: 1.2rem;
                 line-height: 1.4;
                 opacity: 0.8;
+                max-width: 540px;
             }
 
             .network-btn {
@@ -72,6 +77,35 @@
             box-sizing: border-box;
             position: absolute;
             top: 500px;
+        }
+
+        .mine-content-bottom {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin: 130px 0 100px;
+        }
+
+        .mine-content-section {
+            background: $grey1;
+            padding: 26px 40px;
+            max-width: 355px;
+            border-radius: 10px;
+
+            h4 {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                line-height: 1.4;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 0 auto;
+                line-height: 1.4;
+                opacity: 0.8;
+            }
         }
     }
 }

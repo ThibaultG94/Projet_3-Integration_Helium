@@ -459,10 +459,26 @@ header .header-right .marker {
 }
 .news .news-container .news-partnairs a {
   transition: 0.2s;
+  transform: translate3D(0px, 100%, 0px);
+  opacity: 0;
+  -webkit-animation: newsAnim 1.5s both;
+          animation: newsAnim 1.5s both;
 }
 .news .news-container .news-partnairs a:hover {
   opacity: 0.7;
   scale: 0.95;
+}
+@-webkit-keyframes newsAnim {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes newsAnim {
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 .news .news-container .news-partnairs a img {
   height: 25px;
@@ -621,34 +637,32 @@ header .header-right .marker {
   position: relative;
   text-align: center;
 }
-
-.use-content {
-  padding-top: 520px;
-  z-index: 0;
-  background: white;
-}
-.use-content img {
+.section-use .use-img img {
   width: 100%;
   position: absolute;
   top: -3px;
   left: 0;
-  z-index: 0;
+  z-index: -1;
 }
-.use-content h2 {
+.section-use .use-img h2 {
   color: #111111;
   font-size: 10rem;
   letter-spacing: -10px;
   margin-bottom: 10px;
   line-height: 1.1;
-  z-index: 1;
+  padding-top: 520px;
 }
-.use-content h3 {
+.section-use .use-img h3 {
   color: #888888;
   font-size: 2.8rem;
   line-height: 1.1;
   letter-spacing: -2px;
   max-width: 500px;
   margin: 0 auto 30px;
+}
+
+.use-content {
+  background: #FFFFFF;
 }
 .use-content p {
   color: #111111;
@@ -662,7 +676,7 @@ header .header-right .marker {
   display: flex;
   z-index: 1;
   justify-content: space-around;
-  max-width: 500px;
+  max-width: 480px;
   margin: 0 auto;
 }
 .use-content .div-btn .network-btn {
@@ -681,4 +695,39 @@ header .header-right .marker {
 .use-content .div-btn .network-btn:hover {
   opacity: 0.8;
   transform: translateY(2px);
+}
+.use-content .div-btn .network-btn.netgreen {
+  background: #15D188;
+}
+
+.use-console {
+  background: #FFFFFF;
+  padding-top: 100px;
+}
+.use-console__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.use-console__container--second {
+  background: #F5F7F9;
+  padding: 26px 40px;
+  max-width: 355px;
+  border-radius: 10px;
+}
+.use-console__container--second h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #111111;
+}
+.use-console__container--second p {
+  font-size: 1rem;
+  margin: 0 auto;
+  line-height: 1.4;
+  opacity: 0.8;
+  color: #111111;
 }/*# sourceMappingURL=style.css.map */

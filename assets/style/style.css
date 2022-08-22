@@ -799,4 +799,68 @@ header .header-right .marker {
 .use-partnairs__logo img {
   height: 30px;
   margin: 30px;
+}
+
+.section-techno {
+  background: #1D1D1D;
+}
+.section-techno_container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.section-techno_container__header h2 {
+  font-size: 6.8rem;
+  letter-spacing: -6px;
+  margin-bottom: 20px;
+  line-height: 0.9;
+  max-width: 700px;
+}
+.section-techno_container__header p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  opacity: 0.8;
+  max-width: 530px;
+}
+.section-techno_container__info {
+  display: flex;
+  justify-content: space-between;
+}
+.section-techno_container__info--content {
+  max-width: 430px;
+  margin: 10px;
+  min-width: 220px;
+  transition: 0.6s ease;
+  cursor: pointer;
+  border-radius: 20px;
+  background: #383838;
+}
+.section-techno_container__info--content_img img {
+  border-radius: 20px 20px 0 0;
+}
+.section-techno_container__info--content_text {
+  padding: 30px;
+  border-radius: 0 0 20px 20px;
+  margin-top: -5px;
+  height: 223px;
+  display: block;
+}
+.section-techno_container__info--content_text h5 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+.section-techno_container__info--content_text p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  opacity: 0.8;
+  max-width: 260px;
+}
+.section-techno_container__info--content:hover {
+  scale: 1.08;
+  background: #4A4A4A;
+  box-shadow: 0 82px 54px -50px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */

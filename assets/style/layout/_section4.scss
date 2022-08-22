@@ -1,0 +1,78 @@
+.section-techno {
+    background: $black2;
+
+    &_container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 100px 0;
+
+        &__header {
+
+            h2 {
+                font-size: 6.8rem;
+                letter-spacing: -6px;
+                margin-bottom: 20px;
+                line-height: 0.9;
+                max-width: 700px;
+            }
+
+            p {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                line-height: 1.4;
+                opacity: 0.8;
+                max-width: 530px;
+            }
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+
+            &--content {
+                max-width: 430px;
+                margin: 10px;
+                min-width: 220px;
+                transition: 0.6s ease;
+                cursor: pointer;
+                border-radius: 20px;
+                background: $grey2;
+
+                &_img {
+                    img {
+                        border-radius: 20px 20px 0 0;
+                    }
+                }
+
+                &_text {
+                    padding: 30px;
+                    border-radius: 0 0 20px 20px;
+                    margin-top: -5px;
+                    height: 223px;
+                    display: block;
+
+                    h5 {
+                        font-size: 1.5rem;
+                        line-height: 1.4;
+                        letter-spacing: -0.5px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                        font-size: 1.2rem;
+                        line-height: 1.4;
+                        opacity: 0.8;
+                        max-width: 260px;
+                    }
+                }
+
+                &:hover {
+                    scale: 1.08;
+                    background: $grey4;
+                    box-shadow: 0 82px 54px -50px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}

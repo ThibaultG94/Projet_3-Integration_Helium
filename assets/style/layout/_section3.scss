@@ -78,19 +78,21 @@
 
 .use-console {
     background: $white;
-    padding-top: 100px;
+    padding: 100px 0;
 
     &__container {
-        max-width: 1100px;
+        max-width: 1080px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
 
         &--second {
             background: #F5F7F9;
             padding: 26px 40px;
             max-width: 355px;
             border-radius: 10px;
+            margin: 0 10px;
 
 
             h4 {
@@ -112,7 +114,81 @@
         }
     }
 
-    &__principal {}
+    &__principal {
+        display: flex;
+        max-width: 1060px;
+        margin: 0 auto;
+        background: #F5F7F9;
+        padding: 50px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+        &--left {
+            text-align: left;
+
+            h3 {
+                color: $blackf;
+                font-size: 2.8rem;
+                letter-spacing: -2px;
+                line-height: 1.1;
+                margin-bottom: 30px;
+                max-width: 600px;
+            }
+
+            p {
+                color: $blackf;
+                margin-bottom: 10px;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.4;
+                opacity: 0.8;
+                max-width: 590px;
+            }
+
+            a {
+                color: #3131F0;
+                text-decoration: underline;
+            }
+        }
+
+        &--right {
+            background: url("../img/console2.png") left center;
+            width: 35%;
+            position: absolute;
+            right: 0%;
+            top: 0px;
+            bottom: 0px;
+            overflow: hidden;
+            border-radius: 10px 0 0 10px;
+            background-size: cover;
+        }
+
+    }
+}
+
+.use-partnairs {
+    background: $white;
+    padding-top: 30px;
 
 
+    h4 {
+        color: $greyf2;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__logo {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+
+        img {
+            height: 30px;
+            margin: 30px;
+        }
+    }
 }

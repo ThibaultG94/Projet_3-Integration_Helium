@@ -13,76 +13,76 @@
 </head>
 
 <body>
-    <nav>
-        <a href="./index.html" class="logosymbol"><img src="./assets/svg/logosymbol.svg" alt="logosymbol" /></a>
+    <nav class="navbar">
+        <a href="./index.html" class="navbar__logoSymbol"><img src="./assets/svg/logosymbol.svg" alt="logosymbol" /></a>
         <p><a href="#">Chapter 2</a></p>
         <ul>
-            <li class="build"><a href="#" onclick="return false">Build <img src="./assets/svg/navarrow.svg"
-                        alt="Fleche vers le bas" /></a>
+            <li class="navbar__element--build"><a href="#" onclick="return false">Build <img
+                        src="./assets/svg/navarrow.svg" alt="Fleche vers le bas" /></a>
             </li>
-            <li class="use"><a href="#" onclick="return false">Use <img src="./assets/svg/navarrow.svg"
+            <li class="navbar__element--use"><a href="#" onclick="return false">Use <img src="./assets/svg/navarrow.svg"
                         alt="Fleche vers le bas" /></a></li>
-            <li class="resources"><a href="#" onclick="return false">Resources <img src="./assets/svg/navarrow.svg"
-                        alt="Fleche vers le bas" /></a></li>
+            <li class="navbar__element--resources"><a href="#" onclick="return false">Resources <img
+                        src="./assets/svg/navarrow.svg" alt="Fleche vers le bas" /></a></li>
             <li><a href="#">Who Uses Helium?</a></li>
         </ul>
         <p><a href="#">Cellular Summer</a></p>
-        <div class="globe"><img src="./assets/svg/globe.svg" alt="globe" /></div>
+        <div class="navbar__globe"><img src="./assets/svg/globe.svg" alt="globe" /></div>
 
-        <div class="build-nav">
-            <div class="build-nav-content">
+        <div class="navbar__menu navbar__menu--build">
+            <div class="navbar__menu-content navbar__menu--build-content">
                 <h3>Hotspots</h3>
                 <p>Build the network and mine HNT</p>
             </div>
-            <div class="build-nav-content">
+            <div class="navbar__menu-content navbar__menu--build-content">
                 <h3>Stake</h3>
                 <p>Run a Validator and secure the Network</p>
             </div>
-            <div class="build-nav-content">
+            <div class="navbar__menu-content navbar__menu--build-content">
                 <h3>Token</h3>
                 <p>Explore HNT and Data Credits</p>
             </div>
-            <div class="build-nav-content">
+            <div class="navbar__menu-content navbar__menu--build-content">
                 <h3>Helium 5G</h3>
                 <p>Deploy 5GCoverage on Helium</p>
             </div>
         </div>
 
-        <div class="use-nav">
-            <div class="use-nav-content">
+        <div class="navbar__menu navbar__menu--use">
+            <div class="navbar__menu-content navbar__menu--use-content">
                 <h3>Enterprise</h3>
                 <p>Connect your devices to the Network</p>
             </div>
-            <div class="use-nav-content">
+            <div class="navbar__menu-content navbar__menu--use-content">
                 <h3>Roam</h3>
                 <p>Add our coverage to yours</p>
             </div>
-            <div class="use-nav-content">
+            <div class="navbar__menu-content navbar__menu--use-content">
                 <h3>Solutions</h3>
                 <p>Discover solutions built on Helium</p>
             </div>
-            <div class="use-nav-content">
+            <div class="navbar__menu-content navbar__menu--use-content">
                 <h3>Developer Documentation</h3>
                 <p>Technical information, FAQ and Support</p>
             </div>
         </div>
 
-        <div class="resources-nav">
-            <div class="resources-nav-content">
+        <div class="navbar__menu navbar__menu--resources">
+            <div class="navbar__menu-content navbar__menu--resources-content">
                 <h3>Blog</h3>
                 <p>Read our news and announcements</p>
             </div>
-            <div class="resources-nav-content">
+            <div class="navbar__menu-content navbar__menu--resources-content">
                 <h3>Helium Explorer</h3>
                 <p>Blockchain and Network Map</p>
             </div>
-            <div class="resources-nav-content">
+            <div class="navbar__menu-content navbar__menu--resources-content">
                 <h3>Community</h3>
                 <p>Join the Heliumm Discord</p>
             </div>
         </div>
 
-        <div class="globe-nav">
+        <div class="navbar__globe-menu">
             <p><a href="#">English</a></p>
             <p><a href="#">Français</a></p>
             <p><a href="#">Italiano</a></p>
@@ -98,65 +98,75 @@
 
 
     <div class="click-body">
-        <header>
-            <div class="header-left">
-                <div class="header-left-content">
-                    <div class="hotspots"><span><strong>Cellular Summer is here!</strong> Get your 5G Hotspots
+        <header class="header">
+            <div class="header__text">
+                <div class="header__text-content">
+                    <div class="header__text-content-link"><span><strong>Cellular Summer is here!</strong> Get your 5G
+                            Hotspots
                         </span><img src="./assets/svg/roadmaparrowwhite.svg" alt="svg"></div>
                     <h1>People-Powered Networks.</h1>
                     <h3>Start a Wireless Revolution</h3>
                     <p>Powered by the Helium Blockchan, The People's Network represents a paradigm shift for
                         decentralized
                         wireless infrastucutre.</p>
-                    <div class="header-buttons">
-                        <a href="#" target="_blank" class="button header-blue">Mine</a>
-                        <a href="#" target="_blank" class="button header-purple">Stake</a>
-                        <a href="#" target="_blank" class="button header-green">Use</a>
+                    <div class="header__text-content-buttonsContainer">
+                        <a href="#" target="_blank"
+                            class="header__text-content-buttonsContainer-button header__text-content-buttonsContainer-button--blue">Mine</a>
+                        <a href="#" target="_blank"
+                            class="header__text-content-buttonsContainer-button header__text-content-buttonsContainer-button--purple">Stake</a>
+                        <a href="#" target="_blank"
+                            class="header__text-content-buttonsContainer-button header__text-content-buttonsContainer-button--green">Use</a>
                     </div>
                 </div>
             </div>
-            <div class="header-right">
-                <img src="./assets/img/base.png" alt="base" class="base">
-                <div class="div-lignes">
-                    <img src="./assets/svg/linesnon.svg" alt="Lignes vertes" class="ligns">
+
+            <div class="header__img">
+                <img src="./assets/img/base.png" alt="base" class="header__img-base">
+                <div class="header__img-ligns">
+                    <img src="./assets/svg/linesnon.svg" alt="Lignes vertes" class="header__img-ligns-content">
                 </div>
-                <img src="./assets/img/topmain.png" alt="Topmain" class="topmain">
-                <img src="./assets/svg/marker1.svg" alt="Marker" class="marker">
+                <img src="./assets/img/topmain.png" alt="Topmain" class="header__img-topmain">
+                <img src="./assets/svg/marker1.svg" alt="Marker" class="header__img-marker">
             </div>
         </header>
 
+
         <div class="news">
-            <div class="news-container">
-                <div class="news-last">
+            <div class="news__container">
+                <div class="news__container-top">
                     <h2>Latest News</h2>
-                    <div class="news-btn">
+                    <div class="news__container-top-buttonsContainer">
 
                         <a href="https://blog.helium.com/dish-first-major-carrier-to-bring-helium-5g-to-the-people-10da0e899792"
-                            target="_blank" class="btn-news red">
+                            target="_blank"
+                            class="news__container-top-buttonsContainer-btn news__container-top-buttonsContainer-btn--red">
                             <h4>5G Carrier</h4>
                             <h2>DISH First Major Carrier to Deploy Helium 5G</h2>
                         </a>
 
                         <a href="https://blog.helium.com/actility-and-helium-announce-roaming-integration-to-drive-enterprise-adoption-globally-e09771311035"
-                            target="_blank" class="btn-news green">
+                            target="_blank"
+                            class="news__container-top-buttonsContainer-btn news__container-top-buttonsContainer-btn--green">
                             <h4>Roaming Partner</h4>
                             <h2>Actility and Helium Annoucne Roaming Integration</h2>
                         </a>
 
                         <a href="https://blog.helium.com/announcing-helium-roaming-partnership-with-senet-to-connect-billions-of-iot-devices-db373e067b77"
-                            target="_blank" class="btn-news blue">
+                            target="_blank"
+                            class="news__container-top-buttonsContainer-btn news__container-top-buttonsContainer-btn--blue">
                             <h4>Roaming Announcement</h4>
                             <h2>Announcing Helium Roaming Partnership with Senet</h2>
                         </a>
 
                         <a href="https://blog.helium.com/san-jos%C3%A9-first-city-to-launch-initiative-on-the-peoples-network-to-bridge-the-digital-divide-5849ac8a8be7"
-                            target="_blank" class="btn-news purple">
+                            target="_blank"
+                            class="news__container-top-buttonsContainer-btn news__container-top-buttonsContainer-btn--purple">
                             <h4>Smart City</h4>
                             <h2>San José First City to Launch on The People's Network</h2>
                         </a>
                     </div>
 
-                    <div class="news-partnairs">
+                    <div class="news__container-top-partnairs">
                         <a href="https://www.coindesk.com/markets/2019/09/24/crypto-powered-iot-networks-are-on-their-way-to-over-250-us-cities/"
                             target="_blank"><img src="./assets/img/coindesk.png" alt="Logo coindesk" /></a>
                         <a href="https://www.fastcompany.com/90457813/consumer-electronics-most-innovative-companies-2020"
@@ -171,19 +181,21 @@
                             target="_blank"><img src="./assets/img/fortune.png" alt="Logo Fortune"></a>
                     </div>
                 </div>
-                <div class="news-network">
-                    <div class="network-live">
+
+                <div class="news__container-bottom">
+                    <div class="news__container-bottom-text">
                         <h2>The Network is Live</h2>
                         <p>The People's Network is the world's fastest growing wireless network ever.</p>
-                        <a href="https://explorer.helium.com/" target="_blank" class="network-btn">View Network
+                        <a href="https://explorer.helium.com/" target="_blank"
+                            class="news__container-bottom-text-btn">View Network
                             Coverage</a>
                     </div>
-                    <div class="network-numbs">
-                        <div class="numbs-content">
+                    <div class="news__container-bottom-numbers">
+                        <div class="news__container-bottom-numbers-content">
                             <h4>Total Hotspots</h4>
                             <h3>926 597</h3>
                         </div>
-                        <div class="numbs-content">
+                        <div class="news__container-bottom-numbers-content">
                             <h4>Circulating hnt Supply</h4>
                             <h3>125 743 043</h3>
                         </div>
@@ -192,32 +204,34 @@
             </div>
         </div>
 
+
         <div class="section-mine">
-            <div class="mine-bandereau">
+            <div class="section-mine__bandereau">
                 <img src="./assets/svg/minetri.svg" alt="Rien">
             </div>
-            <div class="mine-content">
-                <div class="mine-content-top">
-                    <div class="mine-content-left">
+            <div class="section-mine__container">
+                <div class="section-mine__container-main">
+                    <div class="section-mine__container-main-text">
                         <h2>Mine.</h2>
                         <h3>A New Way to Mine Crypto</h3>
                         <p>By deploying a simple device in your home or office, you can provide your city with miles of
                             low-power network coverage for billions of devices and earn a new cryptocurrency, HNT.</p>
-                        <a href="https://www.helium.com/mine" class="network-btn">Learn More</a>
+                        <a href="https://www.helium.com/mine" class="section-mine__container-main-text-btn">Learn
+                            More</a>
                     </div>
-                    <div class="mine content-right"><img src="./assets/img/miner4.png" alt="Miner"></div>
+                    <div class="section-mine__container-main-img"><img src="./assets/img/miner4.png" alt="Miner"></div>
                 </div>
-                <div class="mine-content-bottom">
-                    <div class="mine-content-section">
+                <div class="section-mine__container-bottom">
+                    <div class="section-mine__container-bottom-element">
                         <h4>Bye Bye GPU Mining</h4>
                         <p>Mining HNT with Hotspots is done via radio technology, not expensive or wasteful GPUs.</p>
                     </div>
-                    <div class="mine-content-section">
+                    <div class="section-mine__container-bottom-element">
                         <h4>Build Networks</h4>
                         <p>Hotspots work together to form a new global wireless network and undertake
                             'Proof-of-Coverage'.</p>
                     </div>
-                    <div class="mine-content-section">
+                    <div class="section-mine__container-bottom-element">
                         <h4>Choose your hardware</h4>
                         <p>Hotspots are built by a variety of vendors to suit your needs.</p>
                     </div>
@@ -225,24 +239,21 @@
             </div>
         </div>
 
+
         <div class="section-use">
-            <div class="use-img">
+            <div class="section-use__header">
                 <img src="./assets/img/useheader.jpg" alt="Userhead" />
                 <h2>Use.</h2>
                 <h3>Massive, Decentralized Connectivity</h3>
             </div>
-            <div class="use-content">
+            <div class="section-use__main">
                 <p>Hundreds of companies and thousands of developers are already building on The People's Network, the
                     world's largest, and fastest growing LoRaWAN network.</p>
                 <p>Thousands of existings solutions, sensors, devices and gateways can be easily configured to run
                     LongFi - a powerful blend of LoRaWAN and blockchain technologies.</p>
-                <div class="div-btn">
-                    <div class="div-use-btn">
-                        <a href="https://www.helium.com/mine" class="network-btn netgreen">Use the Network</a>
-                    </div>
-                    <div class="div-use-btn">
-                        <a href="https://www.helium.com/mine" class="network-btn">Build with Helium Console</a>
-                    </div>
+                <div class="section-use__main-buttonsContainer">
+                    <a href="https://www.helium.com/mine" class="network-btn netgreen">Use the Network</a>
+                    <a href="https://www.helium.com/mine" class="network-btn">Build with Helium Console</a>
                 </div>
             </div>
             <div class="use-console">

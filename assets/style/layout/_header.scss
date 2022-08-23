@@ -1,4 +1,4 @@
-header {
+.header {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
@@ -13,7 +13,7 @@ header {
         }
     }
 
-    .header-left {
+    &__text {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -26,11 +26,11 @@ header {
             }
         }
 
-        .header-left-content {
+        &-content {
             max-width: 490px;
             margin: 0 auto;
 
-            .hotspots {
+            &-link {
                 background: linear-gradient(90.06deg, $color1 10.06%, $color2 92.17%);
                 padding: 10px;
                 border-radius: 7px;
@@ -78,12 +78,12 @@ header {
                 margin-bottom: 40px;
             }
 
-            .header-buttons {
+            &-buttonsContainer {
                 display: flex;
                 justify-content: space-between;
                 max-width: 300px;
 
-                .button {
+                &-button {
                     color: $blackf;
                     padding: 16px 26px;
                     border-radius: 8px;
@@ -94,31 +94,31 @@ header {
                     transform: translateY(0);
                     display: block;
 
+                    &--blue {
+                        background: $color3;
+                    }
+
+                    &--purple {
+                        background: #A334FB;
+                    }
+
+                    &--green {
+                        background: $color5;
+                    }
+
                     &:hover {
                         opacity: 0.8;
                         transform: translateY(2px);
                     }
                 }
-
-                .header-blue {
-                    background: $color3;
-                }
-
-                .header-purple {
-                    background: #A334FB;
-                }
-
-                .header-green {
-                    background: $color5;
-                }
             }
         }
     }
 
-    .header-right {
+    &__img {
         position: relative;
 
-        .base {
+        &-base {
             width: 140%;
             position: absolute;
             top: 50%;
@@ -126,21 +126,21 @@ header {
             transform: translate(-50%, -50%);
         }
 
-        .div-lignes {
+        &-ligns {
             transform: translate(-50%, -50%) scale(1.8);
             position: absolute;
             left: 37%;
             top: 48%;
             perspective: none;
 
-            .ligns {
+            &-content {
                 transform: rotateX(54.7356103deg) rotateY(0deg) rotateZ(45deg);
                 width: 135%;
             }
 
         }
 
-        .topmain {
+        &-topmain {
             position: absolute;
             left: 81%;
             top: 49%;
@@ -148,7 +148,7 @@ header {
             transform: translate(-50%, -50%);
         }
 
-        .marker {
+        &-marker {
             position: absolute;
             width: 18.4%;
             top: 49%;

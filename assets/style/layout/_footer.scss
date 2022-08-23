@@ -4,12 +4,13 @@
     &__container {
         max-width: 1100px;
         margin: 0 auto;
-        padding: 60px 0;
+        padding: 60px 0 40px;
 
         &--mail {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(133, 133, 133, 0.5);
 
             h3 {
                 font-size: 1.7rem;
@@ -49,9 +50,8 @@
         &--index {
             display: flex;
             justify-content: space-between;
-            border-top: 1px solid rgba(133, 133, 133, 0.5);
-            border-bottom: 1px solid rgba(133, 133, 133, 0.5);
             padding: 40px 0;
+            max-width: 1000px;
 
             &_categorie {
                 h5 {
@@ -74,9 +74,39 @@
                 }
             }
         }
+
+        &--logo {
+            border-top: 1px solid rgba(133, 133, 133, 0.5);
+            padding-top: 50px;
+
+            img {
+                height: 60px;
+            }
+        }
     }
 }
 
 .footer-bottom {
     background: $black4;
+
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            padding: 40px 0;
+        }
+
+        a {
+            font-weight: 500;
+            margin-right: 20px;
+            font-size: 0.9rem;
+            line-height: 26px;
+
+            &:hover {
+                color: #18d48c;
+            }
+        }
+    }
 }

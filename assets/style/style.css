@@ -871,12 +871,13 @@ header .header-right .marker {
 .footer-top__container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 0 40px;
 }
 .footer-top__container--mail {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(133, 133, 133, 0.5);
 }
 .footer-top__container--mail h3 {
   font-size: 1.7rem;
@@ -911,9 +912,8 @@ header .header-right .marker {
 .footer-top__container--index {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid rgba(133, 133, 133, 0.5);
-  border-bottom: 1px solid rgba(133, 133, 133, 0.5);
   padding: 40px 0;
+  max-width: 1000px;
 }
 .footer-top__container--index_categorie h5 {
   font-size: 0.9rem;
@@ -931,7 +931,31 @@ header .header-right .marker {
 .footer-top__container--index_categorie a:hover {
   color: #FFFFFF;
 }
+.footer-top__container--logo {
+  border-top: 1px solid rgba(133, 133, 133, 0.5);
+  padding-top: 50px;
+}
+.footer-top__container--logo img {
+  height: 60px;
+}
 
 .footer-bottom {
   background: #141617;
+}
+.footer-bottom__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer-bottom__container ul {
+  display: flex;
+  padding: 40px 0;
+}
+.footer-bottom__container a {
+  font-weight: 500;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  line-height: 26px;
+}
+.footer-bottom__container a:hover {
+  color: #18d48c;
 }/*# sourceMappingURL=style.css.map */

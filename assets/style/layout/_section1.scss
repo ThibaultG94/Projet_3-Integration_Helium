@@ -1,5 +1,5 @@
 .news {
-    background: $black1;
+    background: $black;
     display: flex;
     justify-content: center;
     padding: 60px 0 120px;
@@ -120,23 +120,6 @@
                     font-size: 1.2rem;
                     line-height: 1.4;
                     opacity: 0.8;
-                }
-
-                &-btn {
-                    color: $white;
-                    padding: 16px 26px;
-                    border-radius: 8px;
-                    font-weight: 600;
-                    font-size: 1.1rem;
-                    transition: 0.2s;
-                    cursor: pointer;
-                    background-color: $color3;
-                    display: inline-block;
-
-                    &:hover {
-                        opacity: 0.8;
-                        transform: translateY(2px);
-                    }
                 }
             }
 

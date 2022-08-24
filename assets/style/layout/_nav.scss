@@ -1,5 +1,5 @@
 .navbar {
-    background: rgba(26, 26, 26, 0.75);
+    background: rgba($black3, 0.75);
     @include childCenter;
     width: 100%;
     position: fixed;
@@ -80,7 +80,7 @@
 
 
             h3 {
-                color: $black2;
+                color: $blackf;
                 font-size: 1rem;
                 font-weight: 500;
                 margin-bottom: 6px;

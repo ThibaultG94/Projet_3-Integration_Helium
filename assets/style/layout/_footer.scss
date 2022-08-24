@@ -1,12 +1,12 @@
 .footer-top {
-    background: $black3;
+    background: $black4;
 
     &__container {
         max-width: 1100px;
         margin: 0 auto;
         padding: 60px 0 40px;
 
-        &--mail {
+        &-mail {
             display: flex;
             justify-content: space-between;
             padding-bottom: 50px;
@@ -17,8 +17,8 @@
                 margin-bottom: 20px;
             }
 
-            .text-mail {
-                background: rgba(255, 255, 255, 0.1);
+            &-input-text {
+                background: rgba($white, 0.1);
                 min-width: 300px;
                 height: 40px;
                 font-size: 1rem;
@@ -28,7 +28,7 @@
                 padding-left: 10px;
             }
 
-            .button-mail {
+            &-input-btn {
                 color: $white;
                 height: 43px;
                 padding: 0 20px;
@@ -42,18 +42,18 @@
                 margin-left: 10px;
 
                 &:hover {
-                    background: #3B41E1;
+                    background: $color7;
                 }
             }
         }
 
-        &--index {
+        &-index {
             display: flex;
             justify-content: space-between;
             padding: 40px 0;
             max-width: 1000px;
 
-            &_categorie {
+            &-categorie {
                 h5 {
                     font-size: 0.9rem;
                     margin: 10px 0;
@@ -62,7 +62,7 @@
                 }
 
                 a {
-                    color: #aaa;
+                    color: $greyf1;
                     font-weight: 300;
                     font-size: 1.1rem;
                     line-height: 26px;
@@ -75,7 +75,7 @@
             }
         }
 
-        &--logo {
+        &-logo {
             border-top: 1px solid rgba(133, 133, 133, 0.5);
             padding-top: 50px;
 
@@ -87,7 +87,7 @@
 }
 
 .footer-bottom {
-    background: $black4;
+    background: #141617;
 
     &__container {
         max-width: 1100px;

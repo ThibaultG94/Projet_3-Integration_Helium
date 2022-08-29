@@ -11,29 +11,19 @@ $black3: #1A1A1A;
 $black4: #1B1B1B;
 $black5: #1D1D1D;
 $white: #FFFFFF;
-$grey1: #353535;
-$grey2: #383838;
-$grey3: #454545;
-$grey4: #4A4A4A;
-$grey5: #323232;
-$grey6: #5D5D5D;
+$grey1: #323232;
+$grey2: #353535;
+$grey3: #383838;
+$grey4: #5D5D5D;
 $greyf1: #AAAAAA;
 $greyf2: #888888;
 $color1: #8816e3;
 $color2: #d5149f;
 $color3: #474DFF;
-$color4: #8626D1;
-$color5: #0ACF83;
-$color6: rgba(0, 0, 0, 0.2);
-$color7: #3B41E1;
+$color4: #0ACF83;
+$color5: #3B41E1;
 
-@mixin childCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@mixin alignCenter($space) {
+@mixin childCenter($space) {
     display: flex;
     align-items: center;
     justify-content: $space;
@@ -51,7 +41,6 @@ $color7: #3B41E1;
 body {
     max-width: 100vw;
     background: $black5;
-    height: 100vh;
     text-align: left;
 }
 
@@ -82,7 +71,7 @@ li {
         }
 
         &--green {
-            background: $color5;
+            background: $color4;
         }
     }
 

@@ -1,6 +1,6 @@
 .navbar {
     background: rgba($black3, 0.75);
-    @include childCenter;
+    @include childCenter(center);
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,7 +29,7 @@
             content: "";
             width: 2px;
             height: 20px;
-            background: $grey6;
+            background: $grey4;
             position: absolute;
             left: -27px;
         }
@@ -38,7 +38,7 @@
             content: "";
             width: 2px;
             height: 20px;
-            background: $grey6;
+            background: $grey4;
             position: absolute;
             right: 0px;
         }

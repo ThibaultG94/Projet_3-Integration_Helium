@@ -25,8 +25,7 @@
         }
 
         &-info {
-            display: flex;
-            justify-content: space-between;
+            @include childCenter(space-between);
 
             &-content {
                 max-width: 430px;
@@ -35,7 +34,7 @@
                 transition: 0.6s ease;
                 cursor: pointer;
                 border-radius: 20px;
-                background: $grey2;
+                background: $grey3;
 
                 &-img {
                     img {
@@ -68,7 +67,7 @@
 
                 &:hover {
                     scale: 1.08;
-                    background: $grey4;
+                    background: $grey1;
                 }
             }
         }

@@ -2,6 +2,7 @@
     position: relative;
     padding-bottom: 60px;
     z-index: 2;
+    background: $black5;
 
     &__bandereau {
         background: url("../img/minebg2.jpg") center/cover;
@@ -70,7 +71,7 @@
             margin: 130px 0 100px;
 
             &-element {
-                background: $grey1;
+                background: $grey2;
                 padding: 26px 40px;
                 max-width: 355px;
                 border-radius: 10px;

@@ -14,9 +14,7 @@
     }
 
     &__text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include childCenter(center);
         transform: translateX(-40px);
         animation: headerLeftAnim 1.5s forwards;
 
@@ -35,9 +33,7 @@
                 padding: 10px;
                 border-radius: 6px;
                 cursor: pointer;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include childCenter(space-between);
                 margin-bottom: 30px;
                 font-size: 0.9rem;
 
@@ -79,8 +75,7 @@
             }
 
             &-buttonsContainer {
-                display: flex;
-                justify-content: space-between;
+                @include childCenter(space-between);
                 max-width: 300px;
             }
         }

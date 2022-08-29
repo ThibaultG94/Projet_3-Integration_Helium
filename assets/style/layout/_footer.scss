@@ -7,8 +7,7 @@
         padding: 60px 0 40px;
 
         &-mail {
-            display: flex;
-            justify-content: space-between;
+            @include childCenter(space-between);
             padding-bottom: 50px;
             border-bottom: 1px solid rgba(133, 133, 133, 0.5);
 
@@ -42,14 +41,13 @@
                 margin-left: 10px;
 
                 &:hover {
-                    background: $color7;
+                    background: $color5;
                 }
             }
         }
 
         &-index {
-            display: flex;
-            justify-content: space-between;
+            @include childCenter(space-between);
             padding: 40px 0;
             max-width: 1000px;
 

@@ -45,9 +45,8 @@
         }
 
         &-buttonsContainer {
-            display: flex;
+            @include childCenter(space-around);
             z-index: 1;
-            justify-content: space-around;
             max-width: 480px;
             margin: 0 auto;
             padding-top: 20px;
@@ -61,8 +60,7 @@
         &-container {
             max-width: 1080px;
             margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
+            @include childCenter(space-between);
             margin-bottom: 20px;
 
             &-box {
@@ -166,6 +164,17 @@
             img {
                 height: 30px;
                 margin: 30px;
+                opacity: 0;
+                transform: translate3D(0px, 100%, 0px);
+                transition: 0.2s;
+                // animation: useAnim 1.5s both;
+
+                @keyframes useAnim {
+                    to {
+                        transform: none;
+                        opacity: 1;
+                    }
+                }
             }
         }
     }

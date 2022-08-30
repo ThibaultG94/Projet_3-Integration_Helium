@@ -15,70 +15,83 @@
 <body>
     <nav class="navbar">
         <a href="./index.html" class="navbar__logoSymbol"><img src="./assets/svg/logosymbol.svg" alt="logosymbol" /></a>
-        <p><a href="#">Chapter 2</a></p>
-        <ul>
-            <li class="navbar__element--build"><a href="#" onclick="return false">Build <img
-                        src="./assets/svg/navarrow.svg" alt="Fleche vers le bas" /></a>
-            </li>
-            <li class="navbar__element--use"><a href="#" onclick="return false">Use <img src="./assets/svg/navarrow.svg"
-                        alt="Fleche vers le bas" /></a></li>
-            <li class="navbar__element--resources"><a href="#" onclick="return false">Resources <img
-                        src="./assets/svg/navarrow.svg" alt="Fleche vers le bas" /></a></li>
-            <li><a href="#">Who Uses Helium?</a></li>
-        </ul>
-        <p><a href="#">Cellular Summer</a></p>
+        <div class="navbar__pc">
+            <p><a href="#">Chapter 2</a></p>
+            <ul>
+                <li class="navbar__element--build"><a href="#" onclick="return false">Build <img
+                            src="./assets/svg/navarrow.svg" alt="Fleche vers le bas" /></a>
+                </li>
+                <li class="navbar__element--use"><a href="#" onclick="return false">Use <img
+                            src="./assets/svg/navarrow.svg" alt="Fleche vers le bas" /></a></li>
+                <li class="navbar__element--resources"><a href="#" onclick="return false">Resources <img
+                            src="./assets/svg/navarrow.svg" alt="Fleche vers le bas" /></a></li>
+                <li><a href="#">Who Uses Helium?</a></li>
+            </ul>
+            <p><a href="#">Cellular Summer</a></p>
+        </div>
+        <div class="navbar__smartphone">
+            <img src="./assets/svg/menuwhite.svg" alt="Menu burger">
+            <div class="navbar__smartphone--menu">
+                <div class="navbar__smartphone--menu-right">
+                    <img src="./assets/svg/cross.svg" alt="Croix">
+                </div>
+            </div>
+        </div>
         <div class="navbar__globe"><img src="./assets/svg/globe.svg" alt="globe" /></div>
 
-        <div class="navbar__menu navbar__menu--build">
-            <div class="navbar__menu-content navbar__menu--build-content">
-                <h3>Hotspots</h3>
-                <p>Build the network and mine HNT</p>
+        <div class="div-menus">
+            <div class="navbar__menu navbar__menu--build">
+                <div class="navbar__menu-content navbar__menu--build-content">
+                    <h3>Hotspots</h3>
+                    <p>Build the network and mine HNT</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--build-content">
+                    <h3>Stake</h3>
+                    <p>Run a Validator and secure the Network</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--build-content">
+                    <h3>Token</h3>
+                    <p>Explore HNT and Data Credits</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--build-content">
+                    <h3>Helium 5G</h3>
+                    <p>Deploy 5GCoverage on Helium</p>
+                </div>
             </div>
-            <div class="navbar__menu-content navbar__menu--build-content">
-                <h3>Stake</h3>
-                <p>Run a Validator and secure the Network</p>
-            </div>
-            <div class="navbar__menu-content navbar__menu--build-content">
-                <h3>Token</h3>
-                <p>Explore HNT and Data Credits</p>
-            </div>
-            <div class="navbar__menu-content navbar__menu--build-content">
-                <h3>Helium 5G</h3>
-                <p>Deploy 5GCoverage on Helium</p>
-            </div>
-        </div>
 
-        <div class="navbar__menu navbar__menu--use">
-            <div class="navbar__menu-content navbar__menu--use-content">
-                <h3>Enterprise</h3>
-                <p>Connect your devices to the Network</p>
-            </div>
-            <div class="navbar__menu-content navbar__menu--use-content">
-                <h3>Roam</h3>
-                <p>Add our coverage to yours</p>
-            </div>
-            <div class="navbar__menu-content navbar__menu--use-content">
-                <h3>Solutions</h3>
-                <p>Discover solutions built on Helium</p>
-            </div>
-            <div class="navbar__menu-content navbar__menu--use-content">
-                <h3>Developer Documentation</h3>
-                <p>Technical information, FAQ and Support</p>
-            </div>
-        </div>
 
-        <div class="navbar__menu navbar__menu--resources">
-            <div class="navbar__menu-content navbar__menu--resources-content">
-                <h3>Blog</h3>
-                <p>Read our news and announcements</p>
+            <div class="navbar__menu navbar__menu--use">
+                <div class="navbar__menu-content navbar__menu--use-content">
+                    <h3>Enterprise</h3>
+                    <p>Connect your devices to the Network</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--use-content">
+                    <h3>Roam</h3>
+                    <p>Add our coverage to yours</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--use-content">
+                    <h3>Solutions</h3>
+                    <p>Discover solutions built on Helium</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--use-content">
+                    <h3>Developer Documentation</h3>
+                    <p>Technical information, FAQ and Support</p>
+                </div>
             </div>
-            <div class="navbar__menu-content navbar__menu--resources-content">
-                <h3>Helium Explorer</h3>
-                <p>Blockchain and Network Map</p>
-            </div>
-            <div class="navbar__menu-content navbar__menu--resources-content">
-                <h3>Community</h3>
-                <p>Join the Heliumm Discord</p>
+
+            <div class="navbar__menu navbar__menu--resources">
+                <div class="navbar__menu-content navbar__menu--resources-content">
+                    <h3>Blog</h3>
+                    <p>Read our news and announcements</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--resources-content">
+                    <h3>Helium Explorer</h3>
+                    <p>Blockchain and Network Map</p>
+                </div>
+                <div class="navbar__menu-content navbar__menu--resources-content">
+                    <h3>Community</h3>
+                    <p>Join the Heliumm Discord</p>
+                </div>
             </div>
         </div>
 

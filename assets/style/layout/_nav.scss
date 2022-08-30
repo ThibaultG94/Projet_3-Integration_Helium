@@ -14,6 +14,29 @@
         top: 9px;
     }
 
+    &__pc {
+        @include childCenter(center);
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &__smartphone {
+        display: none;
+
+        @media screen and (max-width: 991px) {
+            @include childCenter(center);
+            cursor: pointer;
+            position: relative;
+        }
+
+        &--menu {
+            position: absolute;
+            background: black;
+        }
+    }
+
     p {
         font-weight: 500;
         line-height: 16px;
@@ -50,7 +73,10 @@
         a {
             font-weight: 500;
             line-height: 16px;
-            position: relative;
+
+            &:first-child {
+                position: relative;
+            }
         }
     }
 
@@ -61,7 +87,7 @@
     &__menu {
         visibility: hidden;
         position: absolute;
-        bottom: -305px;
+        bottom: -330px;
         background: $white;
         padding: 20px 0 0;
         border-radius: 5px;
@@ -102,16 +128,16 @@
         }
 
         &--build {
-            left: 730px;
+            left: -590px;
         }
 
         &--use {
-            left: 810px;
+            left: -510px;
         }
 
         &--resources {
-            bottom: -237px;
-            left: 880px;
+            bottom: -260px;
+            left: -440px;
             width: 287px;
         }
     }
@@ -168,4 +194,8 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.div-menus {
+    position: relative;
 }

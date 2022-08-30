@@ -15,6 +15,7 @@ body {
   max-width: 100vw;
   background: #1D1D1D;
   text-align: left;
+  position: relative !important;
 }
 
 li {
@@ -71,6 +72,32 @@ li {
   left: 14px;
   top: 9px;
 }
+.navbar__pc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 991px) {
+  .navbar__pc {
+    display: none;
+  }
+}
+.navbar__smartphone {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .navbar__smartphone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+  }
+}
+.navbar__smartphone--menu {
+  position: absolute;
+  background: black;
+}
 .navbar p {
   font-weight: 500;
   line-height: 16px;
@@ -103,6 +130,8 @@ li {
 .navbar li a {
   font-weight: 500;
   line-height: 16px;
+}
+.navbar li a:first-child {
   position: relative;
 }
 .navbar img {
@@ -111,7 +140,7 @@ li {
 .navbar__menu {
   visibility: hidden;
   position: absolute;
-  bottom: -305px;
+  bottom: -330px;
   background: #FFFFFF;
   padding: 20px 0 0;
   border-radius: 5px;
@@ -147,14 +176,14 @@ li {
   background: #ebebeb;
 }
 .navbar__menu--build {
-  left: 730px;
+  left: -590px;
 }
 .navbar__menu--use {
-  left: 810px;
+  left: -510px;
 }
 .navbar__menu--resources {
-  bottom: -237px;
-  left: 880px;
+  bottom: -260px;
+  left: -440px;
   width: 287px;
 }
 .navbar__globe {
@@ -200,6 +229,10 @@ li {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+.div-menus {
+  position: relative;
 }
 
 .header {

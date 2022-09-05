@@ -29,15 +29,48 @@
             </ul>
             <p><a href="#">Cellular Summer</a></p>
         </div>
+        <div class="navbar__globe"><img src="./assets/svg/globe.svg" alt="globe" /></div>
         <div class="navbar__smartphone">
-            <img src="./assets/svg/menuwhite.svg" alt="Menu burger">
+            <img src="./assets/svg/menuwhite.svg" alt="Menu burger" class="menuwhite">
             <div class="navbar__smartphone--menu">
-                <div class="navbar__smartphone--menu-right">
-                    <img src="./assets/svg/cross.svg" alt="Croix">
+                <div class="navbar__smartphone--menu-closed">
+                    <img src="./assets/svg/cross.svg" alt="Croix" class="cross">
+                </div>
+                <div class="navbar__smartphone--menu-open">
+                    <ul>
+                        <li class="build__responsive">
+                            Build <img src="./assets/svg/dropdownarrow.svg" alt="Fleche">
+                            <ul class="build__responsive--menu">
+                                <li><a href="#">Hotspots</a></li>
+                                <li><a href="#">Stake</a></li>
+                                <li><a href="#">Token</a></li>
+                                <li><a href="#">5G</a></li>
+                            </ul>
+                        </li>
+                        <li class="use__responsive">
+                            Use <img src="./assets/svg/dropdownarrow.svg" alt="Fleche">
+                            <ul class="use__responsive--menu">
+                                <li><a href="#">Enterprise</a></li>
+                                <li><a href="#">Roam</a></li>
+                                <li><a href="#">Solutions</a></li>
+                                <li><a href="#">Developer Docs</a></li>
+                            </ul>
+                        </li>
+                        <li class="resources__responsive">
+                            Resources <img src="./assets/svg/dropdownarrow.svg" alt="Fleche">
+                            <ul class="resources__responsive--menu">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Helium Explorer</a></li>
+                                <li><a href="#">Community</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Ecosystem</a></li>
+                        <li><a href="#">Cellular Summer</a></li>
+                        <li><a href="#">Helium: Chapter 2</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="navbar__globe"><img src="./assets/svg/globe.svg" alt="globe" /></div>
 
         <div class="div-menus">
             <div class="navbar__menu navbar__menu--build">
@@ -435,7 +468,9 @@
         </footer>
     </div>
 
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/navbar_pc.js"></script>
+    <script src="./assets/scripts/navbar_smartphone.js"></script>
+    <script src="./assets/scripts/animations.js"></script>
 </body>
 
 </html>

@@ -268,20 +268,41 @@ li {
   position: relative;
 }
 
+.build__responsive {
+  overflow: hidden;
+}
 .build__responsive--menu {
-  display: none;
+  height: 0;
+  transition: height 200ms ease-in, padding 200ms ease-in;
 }
 
+.use__responsive {
+  overflow: hidden;
+}
 .use__responsive--menu {
-  display: none;
+  height: 0;
+  transition: height 200ms ease-in, padding 200ms ease-in;
 }
 
+.resources__responsive {
+  overflow: hidden;
+}
 .resources__responsive--menu {
-  display: none;
+  height: 0;
+  transition: height 200ms ease-in, padding 200ms ease-in;
+}
+
+#responsive__menu a {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  line-height: 20px;
+  font-weight: 300;
+  padding: 10px 0;
 }
 
 .response_clicked {
-  display: inline;
+  height: 150px;
+  padding-top: 15px;
 }
 
 .header {

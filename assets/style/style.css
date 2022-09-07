@@ -230,18 +230,28 @@ li {
   opacity: 1;
   transform: translateY(0);
 }
+.navbar .clicked__menu--open {
+  visibility: visible;
+  transform: translateY(0%);
+}
+.navbar .clicked__menu--close {
+  transform: translateY(-100%);
+}
 .navbar__smartphone--menu {
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: -11px;
   width: 100vw;
   cursor: default;
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in-out;
 }
 .navbar__smartphone--menu-closed {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .navbar__smartphone--menu-closed img {
   height: 20px;
@@ -249,15 +259,14 @@ li {
 }
 .navbar__smartphone--menu-open {
   margin-bottom: 35px;
-}
-.navbar__smartphone--menu-open ul {
-  margin-left: 16px;
+  padding-left: 16px;
 }
 .navbar__smartphone--menu-open li {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   line-height: 23px;
+  list-style-type: none;
 }
 .navbar__smartphone--menu-open img {
   width: 12px;
@@ -270,26 +279,49 @@ li {
 
 .build__responsive {
   overflow: hidden;
+  margin-bottom: 100px;
+}
+.build__responsive li:first-child {
+  margin-top: 15px;
+}
+.build__responsive li {
+  margin-bottom: 8px;
 }
 .build__responsive--menu {
   height: 0;
-  transition: height 200ms ease-in, padding 200ms ease-in;
+  transition: height 200ms ease-in;
 }
 
 .use__responsive {
   overflow: hidden;
 }
+.use__responsive li:first-child {
+  margin-top: 15px;
+}
+.use__responsive li {
+  margin-bottom: 8px;
+}
 .use__responsive--menu {
   height: 0;
-  transition: height 200ms ease-in, padding 200ms ease-in;
+  transition: height 200ms ease-in;
 }
 
 .resources__responsive {
   overflow: hidden;
 }
+.resources__responsive li:first-child {
+  margin-top: 15px;
+}
+.resources__responsive li {
+  margin-bottom: 8px;
+}
 .resources__responsive--menu {
   height: 0;
-  transition: height 200ms ease-in, padding 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+
+.title_responsive {
+  padding-bottom: 15px;
 }
 
 #responsive__menu a {
@@ -297,12 +329,14 @@ li {
   color: #bbbbbb;
   line-height: 20px;
   font-weight: 300;
-  padding: 10px 0;
 }
 
 .response_clicked {
-  height: 150px;
-  padding-top: 15px;
+  height: 155px;
+}
+
+.response_clicked2 {
+  height: 130px;
 }
 
 .header {

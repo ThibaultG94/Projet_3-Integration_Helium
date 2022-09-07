@@ -11,11 +11,13 @@ const resourcesResponseMenu = document.querySelector(
 );
 
 menuBurger.addEventListener("click", () => {
-  menuSmartphone.classList.add("clicked");
+  menuSmartphone.classList.add("clicked__menu--open");
+  menuSmartphone.classList.remove("clicked__menu--close");
 });
 
 closeMenu.addEventListener("click", () => {
-  menuSmartphone.classList.remove("clicked");
+  menuSmartphone.classList.add("clicked__menu--close");
+  menuSmartphone.classList.remove("clicked__menu--responsive");
 });
 
 buildResponse.addEventListener("click", () => {
@@ -27,5 +29,5 @@ useResponse.addEventListener("click", () => {
 });
 
 resourcesResponse.addEventListener("click", () => {
-  resourcesResponseMenu.classList.toggle("response_clicked");
+  resourcesResponseMenu.classList.toggle("response_clicked2");
 });

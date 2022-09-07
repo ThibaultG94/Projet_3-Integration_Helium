@@ -349,6 +349,14 @@ li {
   -webkit-animation: headerAnim 2.5s forwards;
           animation: headerAnim 2.5s forwards;
 }
+@media screen and (max-width: 1200px) {
+  .header {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "text" "graph";
+    overflow-y: hidden;
+  }
+}
 @-webkit-keyframes headerAnim {
   to {
     opacity: 1;
@@ -367,6 +375,12 @@ li {
   -webkit-animation: headerLeftAnim 1.5s forwards;
           animation: headerLeftAnim 1.5s forwards;
 }
+@media screen and (max-width: 1200px) {
+  .header__text {
+    grid-area: text;
+    padding-top: 200px;
+  }
+}
 @-webkit-keyframes headerLeftAnim {
   to {
     transform: translateX(0);
@@ -380,6 +394,11 @@ li {
 .header__text-content {
   max-width: 490px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .header__text-content {
+    max-width: 1030px;
+  }
 }
 .header__text-content-link {
   background: linear-gradient(90.06deg, #8816e3 10.06%, #d5149f 92.17%);
@@ -431,12 +450,26 @@ li {
 .header__img {
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  .header__img {
+    grid-area: graph;
+    z-index: -1;
+  }
+}
 .header__img-base {
   width: 140%;
   position: absolute;
   top: 50%;
   left: 70%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1200px) {
+  .header__img-base {
+    width: 90%;
+    left: 75%;
+    top: 100%;
+    box-sizing: border-box;
+  }
 }
 .header__img-ligns {
   transform: translate(-50%, -50%) scale(1.8);
@@ -445,9 +478,21 @@ li {
   top: 48%;
   perspective: none;
 }
+@media screen and (max-width: 1200px) {
+  .header__img-ligns {
+    transform: translate(-50%, -50%) scale(2);
+    left: 60%;
+    top: 100%;
+  }
+}
 .header__img-ligns-content {
   transform: rotateX(54.7356103deg) rotateY(0deg) rotateZ(45deg);
   width: 135%;
+}
+@media screen and (max-width: 1200px) {
+  .header__img-ligns-content {
+    width: 120%;
+  }
 }
 .header__img-topmain {
   position: absolute;
@@ -456,12 +501,26 @@ li {
   width: 76%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 1200px) {
+  .header__img-topmain {
+    left: 85%;
+    top: 100%;
+    width: 50%;
+  }
+}
 .header__img-marker {
   position: absolute;
   width: 18.4%;
   top: 49%;
   left: 29%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1200px) {
+  .header__img-marker {
+    width: 13%;
+    top: 100%;
+    left: 50%;
+  }
 }
 
 .news {

@@ -6,10 +6,31 @@
     &__container {
         max-width: 1110px;
 
+
+        @media screen and (max-width: 1199px) {
+            max-width: 910px;
+        }
+
+        @media screen and (max-width: 991px) {
+            max-width: 760px;
+        }
+
+        @media screen and (max-width: 767px) {
+            max-width: 560px;
+        }
+
         h2 {
             font-size: 2.8rem;
             font-weight: 600;
             margin-bottom: 25px;
+
+            @media screen and (max-width: 991px) {
+                text-align: center;
+            }
+
+            @media screen and (max-width: 450px) {
+                font-size: 2.2rem;
+            }
         }
 
         &-top {
@@ -18,6 +39,29 @@
                 @include childCenter(space-between);
                 margin-bottom: 30px;
                 width: 1130px;
+
+                @media screen and (max-width: 1199px) {
+                    max-width: 930px;
+                }
+
+
+                @media screen and (max-width: 991px) {
+                    max-width: 830px;
+                }
+
+                @media screen and (max-width: 950px) {
+                    max-width: 570px;
+                    margin: 0 auto;
+                }
+
+                @media screen and (max-width: 575px) {
+                    max-width: 540px;
+                    margin: 0 auto;
+                }
+
+                @media screen and (max-width: 545px) {
+                    max-width: 250px;
+                }
 
                 &-btn {
                     padding: 50px 45px 20px 20px;
@@ -33,16 +77,28 @@
 
                     &--green {
                         background: url("../img/newsteal.png") center/cover;
+
+                        @media screen and (max-width: 545px) {
+                            display: none;
+                        }
                     }
 
 
                     &--blue {
                         background: url("../img/newsblue.png") center/cover;
+
+                        @media screen and (max-width: 950px) {
+                            display: none;
+                        }
                     }
 
 
                     &--purple {
                         background: url("../img/newspurple.png") center/cover;
+
+                        @media screen and (max-width: 1199px) {
+                            display: none;
+                        }
                     }
 
                     &:hover {
@@ -72,11 +128,29 @@
                 @include childCenter(space-between);
                 padding-bottom: 90px;
                 border-bottom: 1px solid $grey1;
+                flex-wrap: wrap;
+
+                @media screen and (max-width: 991px) {
+                    @include childCenter(center);
+                    max-width: 700px;
+                    margin: 100px auto;
+                }
+
+                @media screen and (max-width: 767px) {
+                    max-width: 500px;
+                    margin: 50px auto;
+                    padding-bottom: 60px;
+                }
 
                 a {
                     transition: 0.2s;
                     transform: translate3D(0px, 100%, 0px);
                     opacity: 0;
+
+                    @media screen and (max-width: 991px) {
+                        margin: 10px;
+                    }
+
 
                     &:hover {
                         opacity: 0.7;

@@ -33,11 +33,24 @@ li {
   background-color: #474DFF;
   display: inline-block;
 }
+@media screen and (max-width: 465px) {
+  .button {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+    border-radius: 6px;
+  }
+}
 .button--green {
   background: #15D188;
 }
 .button--blackFont {
   color: #111111;
+  margin-left: 5px;
+}
+@media screen and (max-width: 284px) {
+  .button--blackFont {
+    margin-bottom: 15px;
+  }
 }
 .button--blackFont--purple {
   background: #A334FB;
@@ -402,7 +415,8 @@ li {
 }
 @media screen and (max-width: 1200px) {
   .header__text-content {
-    max-width: 1030px;
+    max-width: 900px;
+    margin: 0 50px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -418,6 +432,13 @@ li {
 @media screen and (max-width: 768px) {
   .header__text-content {
     max-width: 720px;
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .header__text-content {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 .header__text-content-link {
@@ -430,6 +451,7 @@ li {
   justify-content: space-between;
   margin-bottom: 30px;
   font-size: 0.9rem;
+  width: 90%;
 }
 .header__text-content-link img {
   height: 12px;
@@ -465,25 +487,39 @@ li {
     font-size: 4.3rem;
   }
 }
+@media screen and (max-width: 450px) {
+  .header__text-content h1 {
+    font-size: 3.9rem;
+    letter-spacing: -3px;
+  }
+}
 .header__text-content h3 {
   color: #474DFF;
   font-size: 1.7rem;
   font-weight: 100;
   line-height: 38px;
   margin-bottom: 19px;
+  letter-spacing: -1px;
+}
+@media screen and (max-width: 450px) {
+  .header__text-content h3 {
+    font-size: 2.3rem;
+    line-height: 0.9;
+    font-weight: 300;
+    max-width: 100%;
+  }
 }
 .header__text-content p {
   font-weight: 300;
-  line-height: 28px;
+  line-height: 1.4;
   font-size: 1.2rem;
   opacity: 0.8;
   margin-bottom: 40px;
 }
-.header__text-content-buttonsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 300px;
+@media screen and (max-width: 450px) {
+  .header__text-content p {
+    font-size: 1rem;
+  }
 }
 .header__img {
   position: relative;
@@ -509,6 +545,27 @@ li {
     box-sizing: border-box;
   }
 }
+@media screen and (max-width: 991px) {
+  .header__img-base {
+    width: 80%;
+    left: 80%;
+    top: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__img-base {
+    width: 100%;
+    left: 70%;
+    top: 103%;
+  }
+}
+@media screen and (max-width: 465px) {
+  .header__img-base {
+    width: 150%;
+    left: 75%;
+    top: 103%;
+  }
+}
 .header__img-ligns {
   transform: translate(-50%, -50%) scale(1.8);
   position: absolute;
@@ -523,6 +580,24 @@ li {
     top: 100%;
   }
 }
+@media screen and (max-width: 991px) {
+  .header__img-ligns {
+    left: 66%;
+    top: 88%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__img-ligns {
+    left: 54%;
+    top: 103%;
+  }
+}
+@media screen and (max-width: 465px) {
+  .header__img-ligns {
+    left: 43%;
+    top: 102%;
+  }
+}
 .header__img-ligns-content {
   transform: rotateX(54.7356103deg) rotateY(0deg) rotateZ(45deg);
   width: 135%;
@@ -530,6 +605,16 @@ li {
 @media screen and (max-width: 1200px) {
   .header__img-ligns-content {
     width: 120%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__img-ligns-content {
+    width: 115%;
+  }
+}
+@media screen and (max-width: 465px) {
+  .header__img-ligns-content {
+    width: 135%;
   }
 }
 .header__img-topmain {
@@ -546,6 +631,27 @@ li {
     width: 50%;
   }
 }
+@media screen and (max-width: 991px) {
+  .header__img-topmain {
+    left: 88%;
+    top: 90%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__img-topmain {
+    left: 80%;
+    top: 102%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 465px) {
+  .header__img-topmain {
+    left: 93%;
+    top: 102%;
+    width: 86%;
+  }
+}
 .header__img-marker {
   position: absolute;
   width: 18.4%;
@@ -558,6 +664,27 @@ li {
     width: 13%;
     top: 100%;
     left: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header__img-marker {
+    width: 11%;
+    top: 88%;
+    left: 58%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__img-marker {
+    width: 12%;
+    top: 100%;
+    left: 42%;
+  }
+}
+@media screen and (max-width: 465px) {
+  .header__img-marker {
+    width: 20%;
+    top: 102%;
+    left: 35%;
   }
 }
 

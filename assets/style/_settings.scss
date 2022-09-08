@@ -60,12 +60,23 @@ li {
     background-color: $color3;
     display: inline-block;
 
+    @media screen and (max-width: 465px) {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+        border-radius: 6px;
+    }
+
     &--green {
         background: #15D188;
     }
 
     &--blackFont {
         color: $blackf;
+        margin-left: 5px;
+
+        @media screen and (max-width: 284px) {
+            margin-bottom: 15px;
+        }
 
         &--purple {
             background: #A334FB;

@@ -66,6 +66,12 @@ li {
         border-radius: 6px;
     }
 
+    &--news {
+        @media screen and (max-width:260px) {
+            padding: 5px;
+        }
+    }
+
     &--green {
         background: #15D188;
     }

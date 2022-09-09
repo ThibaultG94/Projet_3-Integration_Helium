@@ -10,6 +10,15 @@
         height: 600px;
         position: relative;
 
+        @media screen and (max-width: 768px) {
+            height: 400px;
+        }
+
+        @media screen and (max-width: 465px) {
+            height: 310px;
+            background: url("../img/minebg2.jpg") center/cover;
+        }
+
         img {
             position: absolute;
             bottom: -1px;
@@ -23,9 +32,24 @@
         max-width: 1100px;
         margin: 0 auto;
 
+        @media screen and (max-width: 1200px) {
+            padding-left: 50px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-left: 0;
+        }
+
         &-main {
             display: grid;
             grid-template-columns: 50% 50%;
+
+            @media screen and (max-width: 768px) {
+                display: block;
+                text-align: center;
+                max-width: 500px;
+                margin: 0 auto;
+            }
 
             &-text {
 
@@ -34,6 +58,22 @@
                     letter-spacing: -10px;
                     margin-bottom: 10px;
                     line-height: 1.1;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 7.5rem;
+                        letter-spacing: -6px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 5.6rem;
+                        letter-spacing: -5px;
+                        text-align: center !important;
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 3.7rem;
+                        letter-spacing: -4px;
+                    }
                 }
 
                 h3 {
@@ -43,6 +83,14 @@
                     letter-spacing: -2px;
                     margin-bottom: 30px;
                     max-width: 500px;
+
+                    @media screen and (max-width: 768px) {
+                        max-width: none;
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 2.2rem;
+                    }
                 }
 
                 p {
@@ -51,15 +99,34 @@
                     line-height: 1.4;
                     opacity: 0.8;
                     max-width: 540px;
+
+                    @media screen and (max-width: 768px) {
+                        max-width: none;
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 1.1rem;
+                    }
                 }
             }
 
             &-img {
                 img {
-                    max-width: 36%;
+                    width: 36%;
+                    min-width: 500px;
                     box-sizing: border-box;
                     position: absolute;
                     top: 500px;
+
+                    @media screen and (max-width: 768px) {
+                        position: inherit;
+                        margin-top: 40px;
+                    }
+
+                    @media screen and (max-width: 575px) {
+                        min-width: none;
+                        max-width: 36%;
+                    }
                 }
             }
         }

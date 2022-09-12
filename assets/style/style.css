@@ -48,6 +48,11 @@ li {
 .button--green {
   background: #15D188;
 }
+@media screen and (max-width: 516px) {
+  .button--green {
+    margin-bottom: 20px;
+  }
+}
 .button--blackFont {
   color: #111111;
   margin-left: 5px;
@@ -1148,12 +1153,15 @@ li {
   position: relative;
   text-align: center;
 }
+.section-use__header {
+  background-color: white;
+}
 .section-use__header img {
   width: 100%;
-  position: absolute;
+  position: relative;
   top: -3px;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
 .section-use__header h2 {
   color: #111111;
@@ -1161,7 +1169,30 @@ li {
   letter-spacing: -10px;
   margin-bottom: 10px;
   line-height: 1.1;
-  padding-top: 520px;
+  position: relative;
+  z-index: 100;
+  margin-top: -150px;
+}
+@media screen and (max-width: 991px) {
+  .section-use__header h2 {
+    font-size: 7.5rem;
+    letter-spacing: -6px;
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-use__header h2 {
+    font-size: 5.6rem;
+    letter-spacing: -5px;
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-use__header h2 {
+    font-size: 3.7rem;
+    letter-spacing: -4px;
+    margin-top: -15px;
+  }
 }
 .section-use__header h3 {
   color: #888888;
@@ -1169,7 +1200,15 @@ li {
   line-height: 1.1;
   letter-spacing: -2px;
   max-width: 500px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 100;
+}
+@media screen and (max-width: 450px) {
+  .section-use__header h3 {
+    font-size: 2.2rem;
+  }
 }
 .section-use__main {
   background: #FFFFFF;
@@ -1191,6 +1230,11 @@ li {
   margin: 0 auto;
   padding-top: 20px;
 }
+@media screen and (max-width: 516px) {
+  .section-use__main-buttonsContainer {
+    flex-direction: column;
+  }
+}
 .section-use__console {
   background: #FFFFFF;
   padding: 100px 0;
@@ -1203,12 +1247,30 @@ li {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .section-use__console-container {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-use__console-container {
+    max-width: 700px;
+  }
+}
 .section-use__console-container-box {
   background: #F5F7F9;
   padding: 26px 40px;
   max-width: 355px;
   border-radius: 10px;
   margin: 0 10px;
+}
+@media screen and (max-width: 1200px) {
+  .section-use__console-container-box {
+    padding: 26px 30px;
+  }
+}
+.section-use__console-container-box--2 {
+  padding: 26px 40px 30px;
 }
 .section-use__console-container-box h4 {
   font-size: 0.9rem;
@@ -1235,6 +1297,16 @@ li {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .section-use__console-bigBox {
+    max-width: 880px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-use__console-bigBox {
+    max-width: 680px;
+  }
+}
 .section-use__console-bigBox-textContent {
   text-align: left;
 }
@@ -1246,14 +1318,24 @@ li {
   margin-bottom: 30px;
   max-width: 600px;
 }
+@media screen and (max-width: 1200px) {
+  .section-use__console-bigBox-textContent h3 {
+    max-width: 500px;
+  }
+}
 .section-use__console-bigBox-textContent p {
   color: #111111;
   margin-bottom: 10px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4;
   opacity: 0.8;
   max-width: 590px;
+}
+@media screen and (max-width: 1200px) {
+  .section-use__console-bigBox-textContent p {
+    max-width: 500px;
+  }
 }
 .section-use__console-bigBox-textContent a {
   color: #3131F0;

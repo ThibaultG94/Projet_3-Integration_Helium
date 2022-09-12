@@ -991,12 +991,12 @@ li {
 }
 @media screen and (max-width: 1200px) {
   .section-mine__container {
-    padding-left: 50px;
+    padding: 0 50px;
   }
 }
 @media screen and (max-width: 768px) {
   .section-mine__container {
-    padding-left: 0;
+    padding: 0;
   }
 }
 .section-mine__container-main {
@@ -1086,8 +1086,8 @@ li {
 }
 @media screen and (max-width: 575px) {
   .section-mine__container-main-img img {
-    min-width: none;
-    max-width: 36%;
+    min-width: 50px;
+    width: 100%;
   }
 }
 .section-mine__container-bottom {
@@ -1096,11 +1096,39 @@ li {
   text-align: center;
   margin: 130px 0 100px;
 }
+@media screen and (max-width: 767px) {
+  .section-mine__container-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 333px) {
+  .section-mine__container-bottom {
+    margin: 50px 0 0px;
+  }
+}
 .section-mine__container-bottom-element {
   background: #353535;
   padding: 26px 40px;
   max-width: 355px;
   border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .section-mine__container-bottom-element {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-mine__container-bottom-element {
+    max-width: 220px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-mine__container-bottom-element {
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
 }
 .section-mine__container-bottom-element h4 {
   font-size: 0.9rem;

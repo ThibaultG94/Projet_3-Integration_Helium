@@ -1454,9 +1454,19 @@ li {
 }
 
 .section-techno__container {
-  max-width: 1100px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 100px 0;
+}
+@media screen and (max-width: 1200px) {
+  .section-techno__container {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-techno__container {
+    padding: 100px 50px;
+  }
 }
 .section-techno__container-header h2 {
   font-size: 6.8rem;
@@ -1464,6 +1474,29 @@ li {
   margin-bottom: 20px;
   line-height: 0.9;
   max-width: 700px;
+}
+@media screen and (max-width: 1200px) {
+  .section-techno__container-header h2 {
+    font-size: 6.7rem;
+    letter-spacing: -4px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-techno__container-header h2 {
+    font-size: 5.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-techno__container-header h2 {
+    font-size: 4.3rem;
+    letter-spacing: -3px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-techno__container-header h2 {
+    font-size: 3.9rem;
+    text-align: center;
+  }
 }
 .section-techno__container-header p {
   margin-bottom: 20px;
@@ -1477,6 +1510,12 @@ li {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 991px) {
+  .section-techno__container-info {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .section-techno__container-info-content {
   max-width: 430px;
   margin: 10px;
@@ -1486,8 +1525,18 @@ li {
   border-radius: 20px;
   background: #383838;
 }
+@media screen and (max-width: 1200px) {
+  .section-techno__container-info-content {
+    max-width: 300px;
+  }
+}
 .section-techno__container-info-content-img img {
   border-radius: 20px 20px 0 0;
+}
+@media screen and (max-width: 1200px) {
+  .section-techno__container-info-content-img img {
+    max-width: 300px;
+  }
 }
 .section-techno__container-info-content-text {
   padding: 30px;
@@ -1495,6 +1544,13 @@ li {
   margin-top: -5px;
   height: 223px;
   display: block;
+}
+@media screen and (max-width: 1200px) {
+  .section-techno__container-info-content-text {
+    max-width: 280px;
+    height: 300px;
+    margin: 0 auto;
+  }
 }
 .section-techno__container-info-content-text h5 {
   font-size: 1.5rem;

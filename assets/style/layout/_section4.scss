@@ -1,9 +1,17 @@
 .section-techno {
 
     &__container {
-        max-width: 1100px;
+        max-width: 1050px;
         margin: 0 auto;
         padding: 100px 0;
+
+        @media screen and (max-width: 1200px) {
+            max-width: 1000px;
+        }
+
+        @media screen and (max-width: 991px) {
+            padding: 100px 50px;
+        }
 
         &-header {
 
@@ -13,6 +21,25 @@
                 margin-bottom: 20px;
                 line-height: 0.9;
                 max-width: 700px;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 6.7rem;
+                    letter-spacing: -4px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 5.6rem;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 4.3rem;
+                    letter-spacing: -3px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    font-size: 3.9rem;
+                    text-align: center;
+                }
             }
 
             p {
@@ -27,6 +54,11 @@
         &-info {
             @include childCenter(space-between);
 
+            @media screen and (max-width: 991px) {
+                justify-content: center;
+                flex-direction: column;
+            }
+
             &-content {
                 max-width: 430px;
                 margin: 10px;
@@ -36,9 +68,17 @@
                 border-radius: 20px;
                 background: $grey3;
 
+                @media screen and (max-width: 1200px) {
+                    max-width: 300px;
+                }
+
                 &-img {
                     img {
                         border-radius: 20px 20px 0 0;
+
+                        @media screen and (max-width: 1200px) {
+                            max-width: 300px;
+                        }
                     }
                 }
 
@@ -48,6 +88,13 @@
                     margin-top: -5px;
                     height: 223px;
                     display: block;
+
+
+                    @media screen and (max-width: 1200px) {
+                        max-width: 280px;
+                        height: 300px;
+                        margin: 0 auto;
+                    }
 
                     h5 {
                         font-size: 1.5rem;

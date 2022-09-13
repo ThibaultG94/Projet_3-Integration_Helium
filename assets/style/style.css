@@ -1572,10 +1572,9 @@ li {
 
 .footer-top {
   background: #1B1B1B;
+  min-width: 100vw;
 }
 .footer-top__container {
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 60px 0 40px;
 }
 .footer-top__container-mail {
@@ -1584,6 +1583,13 @@ li {
   justify-content: space-between;
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(133, 133, 133, 0.5);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .footer-top__container-mail {
+    flex-direction: column;
+  }
 }
 .footer-top__container-mail h3 {
   font-size: 1.7rem;
@@ -1621,6 +1627,7 @@ li {
   justify-content: space-between;
   padding: 40px 0;
   max-width: 1000px;
+  margin: 0 auto;
 }
 .footer-top__container-index-categorie h5 {
   font-size: 0.9rem;
@@ -1641,6 +1648,8 @@ li {
 .footer-top__container-logo {
   border-top: 1px solid rgba(133, 133, 133, 0.5);
   padding-top: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .footer-top__container-logo img {
   height: 60px;

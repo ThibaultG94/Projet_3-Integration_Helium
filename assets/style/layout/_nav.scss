@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     padding: 10px 0;
-    z-index: 100;
+    z-index: 1000;
     backdrop-filter: saturate(180%) blur(20px);
 
     &__logoSymbol {

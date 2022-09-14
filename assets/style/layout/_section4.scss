@@ -10,7 +10,15 @@
         }
 
         @media screen and (max-width: 991px) {
-            padding: 100px 50px;
+            padding: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 50px;
+        }
+
+        @media screen and (max-width: 420px) {
+            padding: 0px;
         }
 
         &-header {
@@ -53,10 +61,11 @@
 
         &-info {
             @include childCenter(space-between);
+            flex-wrap: wrap;
 
             @media screen and (max-width: 991px) {
                 justify-content: center;
-                flex-direction: column;
+                // flex-direction: column;
             }
 
             &-content {
@@ -72,12 +81,17 @@
                     max-width: 300px;
                 }
 
+
                 &-img {
                     img {
                         border-radius: 20px 20px 0 0;
 
                         @media screen and (max-width: 1200px) {
                             max-width: 300px;
+                        }
+
+                        @media screen and (max-width: 300px) {
+                            width: 100%;
                         }
                     }
                 }

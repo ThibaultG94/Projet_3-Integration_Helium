@@ -3,7 +3,7 @@
     min-width: 100vw;
 
     &__container {
-        padding: 60px 0 40px;
+        padding: 60px 60px 40px;
 
         &-mail {
             @include childCenter(space-between);
@@ -19,6 +19,36 @@
             h3 {
                 font-size: 1.7rem;
                 margin-bottom: 20px;
+
+                @media screen and (max-width: 1120px) {
+                    max-width: 350px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    max-width: 300px;
+                    margin-bottom: 16px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
+
+            }
+
+            form {
+                display: flex;
+
+                @media screen and (max-width:926px) {
+                    flex-direction: column;
+                }
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: row;
+                }
+
+                @media screen and (max-width:500px) {
+                    flex-direction: column;
+                }
             }
 
             &-input-text {
@@ -30,6 +60,11 @@
                 border: none;
                 color: $white;
                 padding-left: 10px;
+
+
+                @media screen and (max-width:500px) {
+                    max-width: 80%;
+                }
             }
 
             &-input-btn {
@@ -45,6 +80,20 @@
                 display: inline-block;
                 margin-left: 10px;
 
+                @media screen and (max-width:926px) {
+                    width: 60%;
+                    margin: 20px 0 0 120px;
+                }
+
+                @media screen and (max-width:768px) {
+                    margin: 0 0 0 10px;
+                }
+
+                @media screen and (max-width:500px) {
+                    width: 60%;
+                    margin: 20px 0 0 120px;
+                }
+
                 &:hover {
                     background: $color5;
                 }
@@ -53,9 +102,17 @@
 
         &-index {
             @include childCenter(space-between);
+            align-items: flex-start;
             padding: 40px 0;
             max-width: 1000px;
             margin: 0 auto;
+            flex-wrap: wrap;
+
+            // @media screen and (max-width: 767px) {
+            //     display: grid;
+            //     grid-template-columns: (50%, 50%);
+            //     grid-template-rows: (50%, 50%;
+            //     }
 
             &-categorie {
                 h5 {
@@ -72,6 +129,10 @@
                     line-height: 26px;
                     transition: 0.2s ease;
 
+                    @media screen and (max-width: 465px) {
+                        font-size: 0.875rem;
+                    }
+
                     &:hover {
                         color: $white;
                     }
@@ -85,8 +146,19 @@
             max-width: 1100px;
             margin: 0 auto;
 
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+
             img {
-                height: 60px;
+                width: 170px;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    max-width: 200px;
+                    min-width: 100px;
+                }
             }
         }
     }
@@ -99,19 +171,32 @@
         max-width: 1100px;
         margin: 0 auto;
 
+        @media screen and (max-width: 1200px) {
+            max-width: 980px;
+        }
+
+        @media screen and (max-width: 991px) {
+            max-width: 750px;
+        }
+
         ul {
             display: flex;
             padding: 40px 0;
-        }
 
-        a {
-            font-weight: 500;
-            margin-right: 20px;
-            font-size: 0.9rem;
-            line-height: 26px;
+            @media screen and (max-width: 768px) {
+                display: block;
+                padding: 40px 0 40px 60px;
+            }
 
-            &:hover {
-                color: #18d48c;
+            a {
+                font-weight: 500;
+                margin-right: 20px;
+                font-size: 0.9rem;
+                line-height: 26px;
+
+                &:hover {
+                    color: #18d48c;
+                }
             }
         }
     }
